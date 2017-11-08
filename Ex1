@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+class Work 
+{
+private:
+	int id, sal, hours, ex_hours;
+	int get_wage(int b int c, int d)
+	{
+		int wage;
+		wage = b*c + d*b*1.5;
+		return(wage);
+	}
+public:
+	Work(int a, int b int c int d){id = a; sal = b; hours = c; ex_hours = d;}
+	void view_wage(int a, int d);
+	{
+		cout<<"ID= "<<id<<'\n'<<;
+		cout<<"Wage = "<< get_wage(sal,hours,ex_hours)<<'\n'<<;
+}
+	
+};
+
+void main()
+{
+	int id, sal, hours, ex_hours;
+	cout << "Enter ID: \n";
+	cin >> id;
+	cout << "Enter wage: \n";
+	cin >> sal;
+	cout << "Enter hours: \n";
+	cin >> hours;
+	cout << "Enter extra hours: \n";
+	cin >> ex_hours;
+	Work slave(id,sal,hours,ex_hours);
+	slave.view_wage;
+}
